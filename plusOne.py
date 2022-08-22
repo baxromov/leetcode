@@ -7,7 +7,6 @@ def plusOne(digits: list):
     for i in range(n):
         k = 10 ** (n - i - 1)
         sum += digits[i] * k
-    k = 0
     sum += 1
     digits.clear()
     while sum > 0:
