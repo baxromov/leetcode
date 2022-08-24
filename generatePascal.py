@@ -47,4 +47,19 @@ class Solution:
         return n
 
 
+class Solution:
+    def generate(self, numRows: int) -> List[List[int]]:
 
+        x = [1]
+        a = x.copy()
+        q = []
+        q.append(a)
+        for i in range(1, numRows):
+            for j in range(1, i):
+                if len(x) <= 1:
+                    continue
+                x[-j] = x[-j] + x[-j-1]
+            x += [1]
+            a = x.copy()
+            q.append(a)
+        return q
