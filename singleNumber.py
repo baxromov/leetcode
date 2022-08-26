@@ -1,6 +1,5 @@
 from typing import List
 
-nums = [4, 1, 2, 1, 2]
 
 
 # 1 Solution
@@ -23,3 +22,23 @@ nums = [4, 1, 2, 1, 2]
 # def singleNumber(nums: list):
 #     return tuple(filter(lambda x: nums.count(x) == 1, tuple(nums)))[0]
 # print(singleNumber(nums))
+
+
+# 4 Solutionclass
+# Solution:
+#     def singleNumber(self, nums: List[int]) -> int:
+#         a = 0
+#         for i in nums:
+#             a = i ^ a
+#         return a
+
+# 5 Solution
+# nums = [1,1,2,2,4]
+# nums.sort()
+# b = None
+# for i in nums:
+#     if b != i and nums.count(i) == 1:
+#         print(i)
+#         break
+#     b = i
+# print(b)
