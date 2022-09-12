@@ -18,7 +18,9 @@ def reverseString2(s):
         i += 1
 
 
+def reverseString3(s):
+    s[:] = s[::-1]
 
-# reverseString1(s)
-reverseString2(s)
+reverseString3(s)
+# reverseString2(s)
 print(s)
